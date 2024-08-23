@@ -19,6 +19,7 @@ class Solution:
         return result
 
 """
+4. Generate Parenthesis
 This one took me 4+ hours, and I eventually gave up and saw the solutions
 At first I tried it in like a dynamic programming style, using the previous generated strings to make new ones
 The theory was that the n possible strings would be:

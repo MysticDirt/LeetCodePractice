@@ -26,6 +26,7 @@ class Solution:
         return result
     
 """
+5. Daily Temperatures
 Took me about 20 minutes
 At first I thought of reverse traversing the array and keeping a min stack, but upon further thinking that was not plausible
 There is the possibility that two colder days can be between two hotter days, but one colder day is hotter than the other

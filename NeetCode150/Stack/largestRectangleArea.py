@@ -30,6 +30,7 @@ class Solution:
         return max_area
     
 """
+7. Largest Rectangle in a Histogram
 CORRECT SOLUTION:
 My first attempt is underneath this explanation
 After coming back to this problem a day later I realized I had to rethink this problem
