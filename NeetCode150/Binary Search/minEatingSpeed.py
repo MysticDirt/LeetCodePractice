@@ -1,6 +1,43 @@
 from math import ceil
 from typing import List
 
+class Solution:
+    def minEatingSpeed(self, piles: List[int], h: int) -> int:
+        def check(num):
+            hours = 0
+            for pile in piles:
+                hours += ceil(pile / num)
+            if hours <= h:
+                #print("too big or equal", num)
+                return False
+                
+            else:
+                #print("too small", num)
+                return True
+                
+        left = 1
+        right = max(piles)
+        while left < right:
+            middle = (right // 2) + (left // 2)
+            #print(middle)
+            if (check(middle)):
+                left = middle + 1
+            else:
+                right = middle
+        return left
+        
+"""
+3. Koko Eating Bananas
+ACCEPTED SOLUTION:
+I just looked at the solutions because I could not figure it out
+- Turns out the solution is to literally guess and check with binary search
+- We know the mininum has to be 1 and the maximum is the max pile
+O(n log m) solution where m is the max number in piles and n is the length of piles
+I did not think of guessing and checking. I tried to math it out this whole time.
+Also, I seperated the right / 2 and left / 2 and then added it to avoid reaching integer max when adding it together
+It worked for this problem but optimally it should be left + (right - left) / 2
+"""
+
 
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
