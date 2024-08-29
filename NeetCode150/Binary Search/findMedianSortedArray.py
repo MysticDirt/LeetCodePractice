@@ -58,6 +58,7 @@ class Solution:
         
 
 """
+7. Median of Two Sorted Arrays
 CORRECT SOLUTION:
 Initial attempt below this long explanation
 I watched the NeetCode video for the explanation of the logic but not the code, and then tried implementing the code myself.
