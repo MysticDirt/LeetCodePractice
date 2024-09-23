@@ -102,7 +102,7 @@ Thinking in terms of partitions:
                 left partition is the median.
             - So we compare the two numbers from both arrays after the left partition and choose the minimum.  
             - In the example, we compare 5 and 4 and choose 4. Thus, 4 is our median.
-        - In an even lenght example, we instead choose the maximum from the two right numbers on the left partition plus the mininum
+        - In an even length example, we instead choose the maximum from the two right numbers on the left partition plus the mininum
             from the two left numbers on the right partition divided by 2.
     - We always search the array with the least length to minimize time taken.
     - There are edge cases where the left or right partition takes up the entire array or none of the array.
