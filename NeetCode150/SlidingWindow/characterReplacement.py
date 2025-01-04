@@ -29,7 +29,7 @@ After watching the NeetCode video drawing part I came up with this
 - But we only have to use the max_frequency because the max_length will only happen when max_frequency is at its max
     - Since k is a constant
 - So we do not have to find the max of the dictionary every time
-- If the string is not valid (not enough replacements), then increase the left side of teh sliding window
+- If the string is not valid (not enough replacements), then increase the left side of the sliding window
 - O(n) solution, took me 10 minutes after watching the video.
 First attempt is below:
 """
